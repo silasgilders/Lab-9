@@ -46,7 +46,8 @@ def main():
 
     def handle_poke_select(event):
         """Handles getting the image, and stopping the user 
-            from pressing the button to set it as a desktop background until they've picked a Pokemon."""
+            from pressing the button to set it as a desktop background until they've picked a Pokemon.
+            :param event: this was not used."""
         pokemon_name = cbo_pokemon.get()
         image_url = get_poke_image(pokemon_name)
         image_path = os.path.join(image_dir, pokemon_name + ".png")
